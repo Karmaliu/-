@@ -15,23 +15,104 @@
             <aside>
                 <section>
                     <ul>
-                        <a href="#">
-                            <li><span></span> </li>
+                        <a href="#" onclick="personalHidden(0)">
+                            <li>
+                                <span></span>
+                            </li>
                         </a>
-                        <a href="#">
-                            <li><span> </span></li>
+                        <a href="#" onclick="personalHidden(1)">
+                            <li>
+                                <span> </span>
+                            </li>
                         </a>
-                        <a href="#">
-                            <li><span> </span></li>
+                        <a href="#" onclick="personalHidden(2)">
+                            <li>
+                                <span> </span>
+                            </li>
                         </a>
-                        <a href="#">
-                            <li><span> </span></li>
+                        <a href="#" onclick="personalHidden(3)">
+                            <li>
+                                <span> </span>
+                            </li>
                         </a>
                     </ul>
                 </section>
             </aside>
         </div>
-        <div id='personal'>
+        <div id='personal' class="per">
+            <article>
+                <header>
+                    <img class="user-image" src='./images/userimg.png'>
+                    <h1 id='title'>大西瓜</h1>
+                </header>
+                <h2 class="motto">让自己的简历有点色彩</h2>
+                <h3 class="practice">XXX实习生</h3>
+                <P class="email">123456789@qq.com</P>
+            </article>
+        </div>
+        <div id='personal2' class="per" hidden>
+            <article>
+                <header>
+                    <h1 id='title'>项目经验</h1>
+                </header>
+                <section>
+                    <div id='pplist'>
+                        <div class='pp-first'>
+                            <div>
+                                <ul>
+                                    <li>list1</li>
+                                    <li>list2</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class='pp-secord'>
+                            <div>
+                                <ul>
+                                    <li>list3</li>
+                                    <li>list4</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class='pp-third'>
+                            <div>
+                                <ul>
+                                    <li>list5</li>
+                                    <li>list6</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class='pp-third'>
+                            <div>
+                                <ul>
+                                    <li>list5</li>
+                                    <li>list6</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class='pp-third'>
+                            <div>
+                                <ul>
+                                    <li>list5</li>
+                                    <li>list6</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </article>
+        </div>
+        <div id='personal3' class="per" hidden>
+            <article>
+                <header>
+                    <img class="user-image" src='./images/userimg.png'>
+                    <h1 id='title'>大西瓜</h1>
+                </header>
+                <h2 class="motto">让自己的简历有点色彩</h2>
+                <h3 class="practice">XXX实习生</h3>
+                <P class="email">123456789@qq.com</P>
+            </article>
+        </div>
+        <div id='personal4' class="per" hidden>
             <article>
                 <header>
                     <img class="user-image" src='./images/userimg.png'>
@@ -43,6 +124,19 @@
             </article>
         </div>
     </div>
+    <script>
+        var per = document.getElementsByClassName('per');
+        function personalHidden(activeId) {
+            for (var i = 0; i < 5; i++) {
+                if (activeId === i) {
+                    per[i].removeAttribute('hidden');
+                } else {
+                    per[i].hidden = 'true';
+                }
+            }
+        }
+    </script>
 </body>
+
 
 </html>

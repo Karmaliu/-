@@ -9,7 +9,30 @@ body{
     overflow:hidden;
     text-align: center;
 }
-
+#personal1{
+    position: relative;
+    margin: 5%;
+    overflow:hidden;
+    text-align: center;
+}
+#personal2{
+    position: relative;
+    margin: 5%;
+    overflow:hidden;
+    text-align: center;
+}
+#personal3{
+    position: relative;
+    margin: 5%;
+    overflow:hidden;
+    text-align: center;
+}
+#personal4{
+    position: relative;
+    margin: 5%;
+    overflow:hidden;
+    text-align: center;
+}
 .user-image{
     margin-top: 8%;
     font-weight: 400;
