@@ -1,0 +1,37 @@
+.persion{
+    display: inline;
+}
+.persion p{
+    float: left;
+    margin-left: 100px;
+}
+.persion p:first-child{
+    margin-left: 0px;
+}
+.claerfloat:after{
+    content: '.';
+    height: 0;
+    visibility: hidden;
+    clear: both;
+    display: block;
+}
+.eamil{
+    display: inline;
+}
+.eamil p{
+    float: left;
+    margin-left: 100px;
+}
+.eamil p:first-child{
+    margin-left: 0px;
+}
+
+.skills{
+    display: inline;
+}   
+.skills h4:first-child{
+   margin-bottom: 10px;
+}
+.skills p{
+    line-height: 1px;
+}

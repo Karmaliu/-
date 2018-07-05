@@ -14,3 +14,11 @@
     通常会带有标题。如果没有标题，那么就不推荐使用section
 
     3、article：表示独立的自包含内容，如：一篇文章。文章找那个可以包含标题、内容、脚注
+9.  伪元素清除浮动：
+    .E:after{
+        content:"."; 
+        display:block;
+        height:0;
+        visibility:hidden;
+        clear:both;
+    }
