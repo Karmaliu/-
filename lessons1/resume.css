@@ -1,0 +1,61 @@
+body{
+    background-color:#22c3aa;
+    padding: 0px;
+    margin: 0px;
+}
+#personal{
+    position: relative;
+    margin: 5%;
+    overflow:hidden;
+    text-align: center;
+}
+
+.user-image{
+    margin-top: 8%;
+    font-weight: 400;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%; 
+    border: 10px solid #aee2d9;
+}
+#title{
+    font-size: 45px;
+    line-height: 10px;
+    color: ghostwhite;
+    letter-spacing: 0.5em;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 900;
+    text-shadow: 2px 2px 3px ghostwhite;
+}
+.motto{
+    color:ghostwhite;
+    font-weight: 100;
+}
+.practice{
+    color:ghostwhite;
+}
+.email{
+    color:#9f3;
+}
+#aside{
+    position: absolute;
+    top:50%;
+    float: left;
+    transform: translateY(-50%);
+}
+#aside a{
+    text-decoration: none;
+}
+#aside li{
+    line-height: 2em;
+    list-style: none;
+}
+#aside span{
+    display: block;
+    border:  1px solid red;
+    border-radius: 50%;
+    margin-top: 20px;
+    height: 8px;
+    width: 8px;
+    /* border-style: ridge; */
+}
