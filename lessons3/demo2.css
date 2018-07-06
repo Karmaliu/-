@@ -1,0 +1,23 @@
+#left{
+ float: left;
+ width: 100px;
+ background: red;
+ margin-left: -100%;
+}
+
+#right{
+    float: left;
+    width:200px;
+    background: blue;
+    margin-left:-200px;
+}
+#main{
+    margin: 0 100px 0 200px;
+}
+#db{
+    width: 100%;
+    float: left;
+    background: orange;
+}
+
+/* 缩小的时候不会塌陷 */

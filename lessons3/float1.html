@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>三栏右侧自适应</title>
+</head>
+
+<body>
+    <div class="db">
+        <div class="right">
+            main
+        </div>
+        <div class="left">
+                left
+            </div>
+        <div class="main">
+            <div class="text">
+                right
+            </div>
+        </div>
+    </div>
+</body>
+<style>
+    .main{
+        margin: 0 0 0 300px;
+    }
+    .text {
+        float: left;
+        width: 100%;
+        background: red;
+
+    }
+    .left {
+        position: relative;
+        left: 100px;
+        float: left;
+        width: 200px;
+        background: blue;
+        margin-left: -200px;
+    }
+
+    .right {
+        position: relative;
+        left: 200px;
+        margin-left: -100%-100px;
+        float: left;
+        width: 100px;
+        background: yellow;
+    }
+</style>
+
+</html>
